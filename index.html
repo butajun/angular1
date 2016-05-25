@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Angular1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <script src="client/app.js"></script>
+  <script src="client/app2.js"></script>
+</head>
+
+<body>
+  <!-- <div ng-app="myApp">
+    <div ng-controller="myController as A">
+      <p>{{A.message}}</p>
+    </div>
+  </div> -->
+  <div ng-app="myApp">
+    <div ng-controller="myController as B">
+      {{B.message}}
+      <button ng-click="B.onclick()">GET</button>
+      <ul>
+        <li ng-repeat="item in B.items">{{item.number}}</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
